@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <!--bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!--flickity-->
+    <link rel="stylesheet" href="/flickity/docs/flickity.min.css">
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <!--
+        Navbar section
+    -->
+    <div class="top">
+        <h5>FREE SHIPPING ON PAID ORDERS ABOVE $999</h5>
+    </div>
+
+    <!--off canvas menu-->
+    <div id="offCanvas">
+        <a href="#" class="navbar-brand d-block d-sm-none">LOGO</a>
+        <ul class="nav flex-column">
+            <li class="nav-item active dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#" >Earphones</a></li>
+                    <li><a class="dropdown-item" href="#" >Headphones</a></li>
+                    <li><a class="dropdown-item" href="#" >Charger</a></li>
+                    <li><a class="dropdown-item" href="#" >Smartphones</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SAMSUNG
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Galaxy</a></li>
+                  <li><a class="dropdown-item" href="#">Note series</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  IPHONE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Iphone 12</a></li>
+                  <li><a class="dropdown-item" href="#">Iphone 13</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">REDMI</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">ONEPLUS</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--off canvas ends-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white custom-navbar">
+            <!--toggle button-->
+            <button id="toggleButton" class="navbar-toggler">
+                <span>
+                    <img src="/img/menu.png">
+                </span>
+            </button>
+            <!--toggle button end-->
+            <!--website logo-->
+            <a href="#" class="navbar-brand d-none d-sm-block">LOGO</a>
+                <!--website logo end-->
+            <!--navs-->
+            <div class="d-none d-lg-block" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SHOP
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Earphones</a></li>
+                          <li><a class="dropdown-item" href="#">Headphones</a></li>
+                          <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SAMSUNG
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Galaxy</a></li>
+                          <li><a class="dropdown-item" href="#">Note series</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          IPHONE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Iphone 12</a></li>
+                          <li><a class="dropdown-item" href="#">Iphone 13</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">REDMI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">ONEPLUS</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+    <!--navigation ends-->
+   
+    <div class="banner">
+        <img src="/img/bg.jpg">
+    </div>
+
+    <!--slider-->
+    <div class="slider">
+        <div class="main-carousel">
+            <div class="cell"><img src="/img/slider/slider_1.jpg"></div>
+            <div class="cell"><img src="/img/slider/slider_2.jpg"></div>
+            <div class="cell"><img src="/img/slider/slider_3.jpg"></div>
+            <div class="cell"><img src="/img/slider/slider_4.jpg"></div>
+            <div class="cell"><img src="/img/slider/slider_5.jpg"></div>
+            
+          </div>
+    </div>
+
+    <!--contents -->
+    <!--content layout 1-->
+    <div class="content_layout">
+        <div class="top_bar">
+            <div class="toptx">TV & Home Theater</div>
+            <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+        </div>
+        <div class="incensebx">
+        
+            <div class="contentbx">
+                <div class="imgbx">
+                    <img src="/img/tv/tv_1.jpg">
+                </div>
+                <div class="txtbx">
+                    <p>Add your cart</p>
+                    <input type="button" class="button" value="ADD TO CART">
+                </div>
+            </div>
+            <div class="contentbx">
+              <div class="imgbx">
+                  <img src="/img/tv/tv_2.jpg">
+              </div>
+              <div class="txtbx">
+                  <p>Add your cart</p>
+                  <input type="button" class="button" value="ADD TO CART">
+              </div>
+          </div>
+          <div class="contentbx">
+            <div class="imgbx">
+                <img src="/img/tv/tv_3.jpg">
+            </div>
+            <div class="txtbx">
+                <p>Add your cart</p>
+                <input type="button" class="button" value="ADD TO CART">
+            </div>
+        </div>
+        <div class="contentbx">
+          <div class="imgbx">
+              <img src="/img/tv/tv_4.jpg">
+          </div>
+          <div class="txtbx">
+              <p>Add your cart</p>
+              <input type="button" class="button" value="ADD TO CART">
+          </div>
+      </div>
+    </div>
+    <!--content layout 2-->
+    <DIV class="top_bar">
+        <div class="toptx">Home Appliances</div>
+        <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+    </DIV>
+    <div class="incensebx">
+        
+        <div class="contentbx">
+            <div class="imgbx">
+                <img src="/img/home appliance/home_1.jpg">
+            </div>
+            <div class="txtbx">
+                <p>Add your cart</p>
+                <input type="button" class="button" value="ADD TO CART">
+            </div>
+        </div>
+        <div class="contentbx">
+          <div class="imgbx">
+              <img src="/img/home appliance/home_2.jpg">
+          </div>
+          <div class="txtbx">
+              <p>Add your cart</p>
+              <input type="button" class="button" value="ADD TO CART">
+          </div>
+      </div>
+      <div class="contentbx">
+        <div class="imgbx">
+            <img src="/img/home appliance/home_3.jpg">
+        </div>
+        <div class="txtbx">
+            <p>Add your cart</p>
+            <input type="button" class="button" value="ADD TO CART">
+        </div>
+    </div>
+    <div class="contentbx">
+      <div class="imgbx">
+          <img src="/img/home appliance/home_4.jpg">
+      </div>
+      <div class="txtbx">
+          <p>Add your cart</p>
+          <input type="button" class="button" value="ADD TO CART">
+      </div>
+  </div>
+  </div>
+
+  <!--content layout 3-->
+    <div class="top_bar">
+        <div class="toptx">Mobile Phones</div>
+        <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+    </div>
+  <div class="incensebx">
+      
+      <div class="contentbx">
+          <div class="imgbx">
+              <img src="img/phones/phone_1.jpg">
+          </div>
+          <div class="txtbx">
+              <p>Add your cart</p>
+              <input type="button" class="button" value="ADD TO CART">
+          </div>
+      </div>
+      <div class="contentbx">
+        <div class="imgbx">
+            <img src="/img/phones/phone_2.jpg">
+        </div>
+        <div class="txtbx">
+            <p>Add your cart</p>
+            <input type="button" class="button" value="ADD TO CART">
+        </div>
+    </div>
+    <div class="contentbx">
+      <div class="imgbx">
+          <img src="/img/phones/phone_3.jpg">
+      </div>
+      <div class="txtbx">
+          <p>Add your cart</p>
+          <input type="button" class="button" value="ADD TO CART">
+      </div>
+  </div>
+  <div class="contentbx">
+    <div class="imgbx">
+        <img src="/img/phones/phone_4.jpg">
+    </div>
+    <div class="txtbx">
+        <p>Add your cart</p>
+        <input type="button" class="button" value="ADD TO CART">
+    </div>
+</div>
+</div>
+<!--content layout 4-->
+<div class="top_bar">
+    <div class="toptx">Speciality electronics</div>
+    <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+</div>
+<div class="incensebx">
+    
+    <div class="contentbx">
+        <div class="imgbx">
+            <img src="/img/speciality/sp1.jpg">
+        </div>
+        <div class="txtbx">
+            <p>Add your cart</p>
+            <input type="button" class="button" value="ADD TO CART">
+        </div>
+    </div>
+    <div class="contentbx">
+      <div class="imgbx">
+          <img src="/img/speciality/sp2.jpg">
+      </div>
+      <div class="txtbx">
+          <p>Add your cart</p>
+          <input type="button" class="button" value="ADD TO CART">
+      </div>
+  </div>
+  <div class="contentbx">
+    <div class="imgbx">
+        <img src="/img/speciality/sp3.jpg">
+    </div>
+    <div class="txtbx">
+        <p>Add your cart</p>
+        <input type="button" class="button" value="ADD TO CART">
+    </div>
+</div>
+<div class="contentbx">
+  <div class="imgbx">
+      <img src="/img/speciality/sp4.jpg">
+  </div>
+  <div class="txtbx">
+      <p>Add your cart</p>
+      <input type="button" class="button" value="ADD TO CART">
+  </div>
+</div>
+</div>
+
+</div>
+<!--2nd banner section -->
+<section class="banner_sec">
+  <div class="bann">
+    <img src="/img/banner_1.jpg">
+  </div>
+
+</section>
+
+<!--content layout 5-->
+<div class="top_bar">
+    <div class="toptx">Portable electronics</div>
+    <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+</div>
+<div class="incensebx">
+    
+    <div class="contentbx">
+        <div class="imgbx">
+            <img src="/img/portable/p1.jpg">
+        </div>
+        <div class="txtbx">
+            <p>Add your cart</p>
+            <input type="button" class="button" value="ADD TO CART">
+        </div>
+    </div>
+    <div class="contentbx">
+      <div class="imgbx">
+          <img src="/img/portable/p2.jpg">
+      </div>
+      <div class="txtbx">
+          <p>Add your cart</p>
+          <input type="button" class="button" value="ADD TO CART">
+      </div>
+  </div>
+  <div class="contentbx">
+    <div class="imgbx">
+        <img src="/img/portable/p3.jpg">
+    </div>
+    <div class="txtbx">
+        <p>Add your cart</p>
+        <input type="button" class="button" value="ADD TO CART">
+    </div>
+</div>
+<div class="contentbx">
+  <div class="imgbx">
+      <img src="/img/portable/p4.jpg">
+  </div>
+  <div class="txtbx">
+      <p>Add your cart</p>
+      <input type="button" class="button" value="ADD TO CART">
+  </div>
+</div>
+</div>
+
+<!--banner section 3-->
+<section class="banner_sec">
+  <div class="banner_container">
+    <div class="bann_2">
+      <img src="/img/banner_2/b1.jpg">
+    </div>
+    <div class="bann_2">
+      <img src="/img/banner_2/b2.jpg">
+    </div>
+    <div class="bann_2">
+      <img src="/img/banner_2/b3.jpg">
+    </div> 
+  </div>
+</section>
+
+<!--content layout 6-->
+<div class="top_bar">
+    <div class="toptx">Headphones</div>
+    <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+</div>
+<div class="incensebx">
+    
+    <div class="contentbx">
+        <div class="imgbx">
+            <img src="/img/headphones/h1.jpg">
+        </div>
+        <div class="txtbx">
+            <p>Add your cart</p>
+            <input type="button" class="button" value="ADD TO CART">
+        </div>
+    </div>
+    <div class="contentbx">
+      <div class="imgbx">
+          <img src="/img/headphones/h2.jpg">
+      </div>
+      <div class="txtbx">
+          <p>Add your cart</p>
+          <input type="button" class="button" value="ADD TO CART">
+      </div>
+  </div>
+  <div class="contentbx">
+    <div class="imgbx">
+        <img src="/img/headphones/h3.jpg">
+    </div>
+    <div class="txtbx">
+        <p>Add your cart</p>
+        <input type="button" class="button" value="ADD TO CART">
+    </div>
+</div>
+<div class="contentbx">
+  <div class="imgbx">
+      <img src="/img/headphones/h4.jpg">
+  </div>
+  <div class="txtbx">
+      <p>Add your cart</p>
+      <input type="button" class="button" value="ADD TO CART">
+  </div>
+</div>
+</div>
+
+<!--content layout 7-->
+<div class="top_bar">
+    <div class="toptx">Wireless Earphones</div>
+    <div class="topbtn"><input type="button" class="viewbutton" value="VIEW ALL"></div>
+</div>
+<div class="incensebx">
+    
+    <div class="contentbx">
+        <div class="imgbx">
+            <img src="/img/earphones/1.jpg">
+        </div>
+        <div class="txtbx">
+            <p>Add your cart</p>
+            <input type="button" class="button" value="ADD TO CART">
+        </div>
+    </div>
+    <div class="contentbx">
+      <div class="imgbx">
+          <img src="/img/earphones/2.jpg">
+      </div>
+      <div class="txtbx">
+          <p>Add your cart</p>
+          <input type="button" class="button" value="ADD TO CART">
+      </div>
+  </div>
+  <div class="contentbx">
+    <div class="imgbx">
+        <img src="/img/earphones/3.jpg">
+    </div>
+    <div class="txtbx">
+        <p>Add your cart</p>
+        <input type="button" class="button" value="ADD TO CART">
+    </div>
+</div>
+<div class="contentbx">
+  <div class="imgbx">
+      <img src="/img/earphones/4.jpg">
+  </div>
+  <div class="txtbx">
+      <p>Add your cart</p>
+      <input type="button" class="button" value="ADD TO CART">
+  </div>
+</div>
+</div>
+
+<div class="bottom">
+  <h5>@Follow us on Instagram</h5>
+</div>
+
+<!--last banner -->
+<section class="last_banner">
+    <div class="last_ban_container">
+        <div class="last_ban_imgbx">
+            <img src="/img/banner_3/b1.jpg">
+            <img src="/img/banner_3/b2.jpg">
+            <img src="/img/banner_3/b3.jpg">
+            <img src="/img/banner_3/b4.jpg">
+            <img src="/img/banner_3/b5.jpg">
+            <img src="/img/banner_3/b6.jpg">
+        </div>
+    </div>
+</section>
+
+<!--paragraph section-->
+<section class="content_para">
+    <div class="heading" id="heading">
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    </div>
+    <div class="para">
+      <h6>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora accusamus dignissimos quidem ullam error vel voluptates ratione illo atque molestiae id corporis, harum beatae officiis aspernatur amet, soluta ut. In totam, et eius ex fugit, ipsum quo eos cum aperiam minima debitis unde? Autem numquam cum repellat minima perspiciatis ut, laboriosam debitis voluptatum dolorum error cupiditate totam maxime dolorem aut enim delectus iste dolor itaque ipsa. Dolorem, fugiat sequi. Commodi, blanditiis porro minima, numquam dicta similique possimus assumenda pariatur asperiores consequuntur delectus sint fugiat eum distinctio. Facilis nesciunt eligendi sequi dolorum harum molestiae consequatur modi obcaecati, repellendus perspiciatis voluptatem.</h6>
+      <p id="more" style="display: none;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatem nemo, dolor ad ratione beatae, distinctio itaque quos voluptatum quidem reprehenderit quasi iusto temporibus sequi libero a architecto ipsam. Consequuntur, ab delectus. Dolore fugit in, fugiat iure nobis perspiciatis expedita exercitationem voluptate pariatur? Alias consectetur est nulla autem eaque unde exercitationem, obcaecati excepturi quam, eum et vero aspernatur quis commodi repudiandae! Quisquam numquam alias, facere quae laudantium ut pariatur a libero atque rerum nemo suscipit possimus quidem placeat? Nihil, ullam?</p>
+      <a href="#heading" onclick="document.getElementById('more').style.display='block'">show more</a>
+    </div>
+</section>
+
+
+<!--footer section-->
+<footer>
+    <div class="footer_container">
+        <div class="sec aboutus">
+            <h2>My Electronics</h2>
+            <!--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis numquam non, iusto odit iure fugiat ipsum aut repellendus voluptas itaque ea temporibus asperiores iste totam ab mollitia voluptatem eaque rem tenetur sunt. Quas dolores error sequi. Provident eveniet, delectus nulla, aliquam autem odit fugit cumque exercitationem incidunt error quae velit.</p>-->
+        
+        <ul class="sci">
+            <li><a href=""><i class="fab fa-facebook-f"></i>&nbsp;FACEBOOK</a></li>
+            <li><a href=""><i class="fab fa-instagram"></i> &nbsp;INSTAGRAM</a></li>
+            
+        </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>INFORMATION</h2>
+            <ul>
+                <li><a href="">Track your Order</a></li>
+                <li><a href="">Return and Refunds</a></li>
+                <li><a href="">Daily Horoscope</a></li>
+                <li><a href="">Holiday List</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>ABOUT</h2>
+            <ul>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Corporate Enquiry</a></li>
+                <li><a href="">Exchange/Cancel My Order</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>CUSTOMER CARE</h2>
+            <ul class="info">
+                <li>
+                    <p><a href="">+91 123 456 7890</a></p>
+                    <p><a href="">+91 123 456 7890</a></p>
+                </li>
+                <li>
+                    <p><a href="">knowmore2gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyrighttxt">
+    <p>Copyright @2022 | All Rights Reserved.</p>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/flickity/docs/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  freeScroll: true,
+  wrapAround:true
+});
+    </script>
+    <!--optional script-->
+    <script>
+        let button = document.getElementById('toggleButton');
+        let width = document.getElementById('offCanvas');
+
+        button.addEventListener('click', function(e){
+            if(width.style.width === '0px'){
+                this.style.transform = 'rotate(45deg)';
+                this.style.marginLeft = '250px'
+                width.style.width = '250px'
+            }else{
+                this.style.transform = 'rotate(0)';
+                this.style.marginLeft = '0'
+                width.style.width = '0'
+            }
+
+            e.stopPropagation();
+        })
+
+        window.addEventListener('click', function(){
+            width.style.width = '0';
+            button.style.marginLeft = '0'
+            button.style.transform = 'rotate(0)'
+        })
+    </script>
+
+</body>
+</html>
