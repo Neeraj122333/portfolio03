@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*.navbar{
+    z-index: 100000000;
+}*/
+
+/*custom navigation*/
+.custom-navbar{
+    padding: 18px 20px;
+
+    
+}
+.navbar-brand{
+    padding: 2px 10px;
+    border: 2px solid #28495c;
+    border-radius: 22px;
+    color: #28495c;
+    transition: .5s all ease;
+}.navbar-brand:hover{
+    background-color: #28495c;
+    color: #fff;
+}
+
+#navbarNav .active .nav-link{
+    color: #e16c63;
+}
+#navbarNav .nav-link{
+    color: #244b5f;
+    text-transform: uppercase;
+    padding: .5rem 2rem;
+    font-size: 16px;
+    transition: .5s all ease;
+}
+#navbarNav .nav-link:hover{
+    columns: #e16c63;
+}
+
+/*off canvas menu*/
+
+#offCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    z-index: 100000;
+    padding-top: 24px;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #1a1e3c;
+    transition: .5 all ease;
+}
+.navbar-brand{
+    padding: 2px 10px;
+    border: 2px solid #fff;
+    border-radius: 22px;
+    color: #fff;
+}
+.navbar-brand:hover{
+    background-color: #fff;
+    color: #244b5f;
+}
+#offcanvas ul li a{
+    color: #fff;
+    transition: .5s all ease;
+}
+#offcanvas ul li a:hover{
+    color: #ee8276;
+}
+
+/*toggle button design*/
+#toggleButton{
+    transition: .5s all ease;
+    border: none;
+    outline: none;
+}
+#toggleButton img{
+    width: 40px;
+    transform: rotate(0);
+    transition: .5s all ease;
+}
+
+
+.banner{
+   height: 100vh;
+}
+.banner img{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top{
+    background: pink;
+    width: 100%;
+    padding: 0.7rem;
+    color: white;
+    text-align: center;
+    z-index: 10000000;
+}
+
+/*slider*/
+.slider{
+    height: 350px;
+    margin: 20px;
+}
+.cell{
+    width: 33%;
+    height: 350px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 350px;
+}
+.cell img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/*content layout */
+.toptx{
+    padding: 5px 92px;
+    FONT-FAMILY: serif;
+    FONT-SIZE: 1.3REM;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: BOLDER;
+}
+.topbtn{
+    padding: 5px 92px;
+}
+.viewbutton{
+    padding: 0px 20px;
+    background: red;
+    color: white;   
+}
+.incensebx{
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.top_bar{
+    display: flex;
+    justify-content: space-between;
+}
+.imgbx img{
+    width: 100%;
+    height: 100%;
+}
+.contentbx{
+    width: 255px;
+    margin: 0px 10px;
+    
+}
+.imgbx{
+    overflow: hidden;    
+    width: 255px;
+    height: 173px;
+}
+.txtbx{
+    text-align: center;
+    margin-top: 1rem;
+}
+.button{
+    padding: 0px 70px;
+    background: red;
+    color: white;
+    
+}
+
+/*2nd banner*/
+.banner_sec{
+    margin: 30px 0px;
+}
+.banner_sec .bann{
+    width: 100%;
+}
+.banner_sec .bann img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*banner section 2*/
+.bann_2{
+    width: 100%;
+}
+.banner_container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.banner_container img{
+    height: 400px;
+    object-fit: fill;
+    width: 100%;
+}
+
+.bottom{
+    padding: 0.7rem;
+    color: #000;
+    text-align: center;
+    z-index: 10000000;
+
+}
+/*last banner section*/
+.last_banner{
+    margin-bottom: 20px;
+}
+.last_ban_container {
+    width: 100%;
+    height: 280px;
+    padding: 26px;
+    
+}
+.last_ban_imgbx{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 16.66%;
+}
+.last_ban_imgbx img{
+    height: 250px;
+    width: 100%;
+}
+
+/*paragraph section*/
+.content_para{
+    padding: 30px;
+}
+.heading{
+    text-align: center;
+    font-weight: bolder;
+}
+.para{
+    text-align: justify;
+}
+
+/*footer section*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: initial;
+}
+footer .footer_container .sec{
+    margin-right: 114px;
+}
+footer .footer_container .sec.aboutus{
+    width: 43%;
+}
+footer  h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .footer_container .sec.aboutus p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style-type: none;
+    color:#fff;
+}
+.Sci ul{
+    padding-left: 0 !important;
+}
+ol, ul {
+    padding-left: 0rem !important;
+}
+.sci li a{
+    display: inline-block;
+    width: 124px;
+    height: 40px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+}
+.sci li a:hover{
+    border: 2px solid #fff;
+}
+.sci li a .fab{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklinks{
+    position: relative;
+    width: 30%;
+}
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrighttxt{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .footer_container{
+        flex-direction: column;
+    }
+    footer .footer_container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .footer_container .sec.aboutus,.quicklinks,.contact{
+        width: 100%;
+    }
+    .copyrighttxt{
+        padding: 8px 40px;
+    }
+    .incensebx {
+        padding: 0px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
