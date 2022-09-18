@@ -133,12 +133,19 @@
 }
 .topbtn{
     padding: 5px 92px;
+    margin: 10px;
 }
 .viewbutton{
-    padding: 0px 20px;
+    padding: 8px 20px;
     background: red;
     color: white;   
+    border: none;
+    margin: 5px 0px 5px 0px;
 }
+.topbtn a{
+    text-decoration:  none;
+}
+
 .incensebx{
     padding: 0px 30px;
     display: flex;
@@ -162,16 +169,17 @@
     overflow: hidden;    
     width: 255px;
     height: 173px;
+    margin: 10px 0px;
 }
 .txtbx{
     text-align: center;
     margin-top: 1rem;
 }
 .button{
-    padding: 0px 70px;
+    padding: 0px 74px;
     background: red;
     color: white;
-    
+    border: none;
 }
 
 /*2nd banner*/
@@ -246,6 +254,7 @@ footer{
     width: 100%;
     height: auto;
     padding: 50px;
+    margin-top: 10px;
     background: #111;
     display: flex;
     justify-content: space-between;
